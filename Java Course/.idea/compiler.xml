@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="lesson1-common_End_main" target="1.8" />
+      <module name="lesson1-common_End_test" target="1.8" />
+      <module name="lesson1-firstLast6_main" target="1.8" />
+      <module name="lesson1-firstLast6_test" target="1.8" />
+      <module name="lesson1-maxEnd3_main" target="1.8" />
+      <module name="lesson1-maxEnd3_test" target="1.8" />
+      <module name="lesson1-reverse3_main" target="1.8" />
+      <module name="lesson1-reverse3_test" target="1.8" />
+      <module name="lesson1-sum2_main" target="1.8" />
+      <module name="lesson1-sum2_test" target="1.8" />
+      <module name="lesson1-task1_main" target="1.8" />
+      <module name="lesson1-task1_test" target="1.8" />
+      <module name="util_main" target="1.8" />
+      <module name="util_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

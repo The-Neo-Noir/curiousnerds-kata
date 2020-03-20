@@ -1,0 +1,153 @@
+{
+  "summary" : "Java course.\nCreated: Mar 20, 2020, 4:20:59 PM.",
+  "title" : "Java Course",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "lesson1",
+      "task_list" : [
+        {
+          "name" : "firstLast6",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 66,
+                  "length" : 9,
+                  "possible_answer" : " return nums[0]==6 || nums[nums.length-1]==6;",
+                  "placeholder_text" : "type here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Task {\n  public boolean firstLast6(int[] nums) {\n\n   type here\n  \n  }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertFalse;\nimport static org.junit.Assert.assertTrue;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Task t= new Task();\n    assertTrue(t.firstLast6(new int[]{1, 2, 6}));\n    assertTrue(t.firstLast6(new int[]{6, 1, 2, 3}));\n    assertTrue(t.firstLast6(new int[]{13, 6, 1, 2, 6}));\n    assertTrue(t.firstLast6(new int[]{3, 6}));\n    assertTrue(t.firstLast6(new int[]{6}));\n\n    assertFalse(t.firstLast6(new int[]{8,6,7}));\n    assertFalse(t.firstLast6(new int[]{1, 6, 5}));\n    assertFalse(t.firstLast6(new int[]{1}));\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Given an array of ints, return true if 6 appears as either the first or last element in the array. The array will be length 1 or more.\n</p>\n\nfirstLast6([1, 2, 6]) → true<br/>\nfirstLast6([6, 1, 2, 3]) → true<br/>\nfirstLast6([13, 6, 1, 2, 3]) → false<br/>\nSource:\n<a href=\"https://codingbat.com/prob/p185685\"> https://codingbat.com/prob/p185685 </a>\n\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "common End",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Task {\n    public boolean commonEnd(int[] a, int[] b) {\n       // type your code\n    }\n\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertFalse;\nimport static org.junit.Assert.assertTrue;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Task task = new Task();\n    assertTrue(task.commonEnd(new int[]{1, 2, 3},new int[]{7, 3}));\n    assertTrue(task.commonEnd(new int[]{1, 2, 3},new int[]{1, 3}));\n    assertTrue(task.commonEnd(new int[]{1, 3},new int[]{ 3}));\n    assertTrue(task.commonEnd(new int[]{6}, new int[]{6}));\n\n    assertFalse(task.commonEnd(new int[]{1, 2, 3},new int[]{3, 1}));\n    assertFalse(task.commonEnd(new int[]{ 2, 3},new int[]{1, 3,11}));\n    assertFalse(task.commonEnd(new int[]{ 3},new int[]{ 6,1}));\n    assertFalse(task.commonEnd(new int[]{6,1}, new int[]{7}));\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.</p>\n\n\ncommonEnd([1, 2, 3], [7, 3]) → true<br/>\ncommonEnd([1, 2, 3], [7, 3, 2]) → false<br/>\ncommonEnd([1, 2, 3], [1, 3]) → true<br/>\n\nSource:\n<a href=\"https://codingbat.com/prob/p191991\">https://codingbat.com/prob/p191991</a>\n\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "reverse3",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Task {\n    public int[] reverse3(int[] nums) {\n        // type your code\n    }\n\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertArrayEquals;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    // put your test her\n    assertArrayEquals(new int[]{3,2,1} , new Task().reverse3( new int[]{1, 2, 3}));\n    assertArrayEquals(new int[]{5, 11, 9} , new Task().reverse3( new int[]{9, 11, 5}));\n    assertArrayEquals(new int[]{7, 0, 0} , new Task().reverse3( new int[]{0, 0, 7}));\n    assertArrayEquals(new int[]{2, 1, 2} , new Task().reverse3( new int[]{2, 1, 2}));\n    assertArrayEquals(new int[]{1, 2, 1} , new Task().reverse3( new int[]{1, 2, 1}));\n    assertArrayEquals(new int[]{2, 11, 3} , new Task().reverse3( new int[]{3, 11, 2}));\n    assertArrayEquals(new int[]{7, 2, 3} , new Task().reverse3( new int[]{3, 2, 7}));\n    assertArrayEquals(new int[]{7} , new Task().reverse3( new int[]{ 7}));\n    assertArrayEquals(new int[]{0,0} , new Task().reverse3( new int[]{0,0}));\n\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.</p>\n\nreverse3([1, 2, 3]) → [3, 2, 1]<br/>\nreverse3([5, 11, 9]) → [9, 11, 5]<br/>\nreverse3([7, 0, 0]) → [0, 0, 7]<br/>\nSource:\n<a href=\"https://codingbat.com/prob/p112409\">https://codingbat.com/prob/p112409</a>\n\n</html>\n\n\n\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "maxEnd3",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Task {\n    public int[] maxEnd3(int[] nums) {\n        //put your task here\n    }\n\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertArrayEquals;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    assertArrayEquals(new int[]{1, 2, 3}, new Task().maxEnd3(new int[]{3, 3, 3}));\n    assertArrayEquals(new int[]{11, 5, 9}, new Task().maxEnd3(new int[]{11, 11, 11}));\n    assertArrayEquals(new int[]{2, 11, 3}, new Task().maxEnd3(new int[]{3, 3, 3}));\n    assertArrayEquals(new int[]{11, 3, 3}, new Task().maxEnd3(new int[]{11, 11, 11}));\n    assertArrayEquals(new int[]{3, 11, 11}, new Task().maxEnd3(new int[]{11,11,11}));\n    assertArrayEquals(new int[]{2, 2, 2}, new Task().maxEnd3(new int[]{2,2,2}));\n    assertArrayEquals(new int[]{2, 11, 2}, new Task().maxEnd3(new int[]{2,2,2}));\n    assertArrayEquals(new int[]{0, 0, 1}, new Task().maxEnd3(new int[]{1,1,1}));\n\n  }\n}"
+            }
+          },
+          "description_text" : "<br>\n<p>Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.\n</p>\n\n\nmaxEnd3([1, 2, 3]) → [3, 3, 3]</br>\nmaxEnd3([11, 5, 9]) → [11, 11, 11]</br>\nmaxEnd3([2, 11, 3]) → [3, 3, 3]</br>\nSource: <a href=\"https://codingbat.com/prob/p146256\">https://codingbat.com/prob/p146256</a>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "sum2",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 58,
+                  "length" : 9,
+                  "possible_answer" : "     if( nums.length==0) return 0;\n        if(nums.length==1) return nums[0];\n        else return nums[0]+nums[1];",
+                  "placeholder_text" : "type here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Task {\n    public int sum2(int[] nums) {\n\n   type here\n\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertArrayEquals;\nimport static org.junit.Assert.assertEquals;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    // put your test here\n    assertEquals(6, new Task().sum2(new int[]{3, 3, 3}));\n    assertEquals(3, new Task().sum2(new int[]{1, 2, 3}));\n    assertEquals(2, new Task().sum2(new int[]{1, 1}));\n    assertEquals(2, new Task().sum2(new int[]{1,1,1,1}));\n    assertEquals(3, new Task().sum2(new int[]{1,2}));\n    assertEquals(1, new Task().sum2(new int[]{1}));\n    assertEquals(0, new Task().sum2(new int[]{}));\n    assertEquals(9, new Task().sum2(new int[]{4, 5, 6}));\n    assertEquals(5, new Task().sum2(new int[]{5}));\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n\n\n<p>Given an array of ints, return the sum of the first 2 elements in the array. If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0.</p>\n\n\nsum2([1, 2, 3]) → 3</br>\nsum2([1, 1]) → 2</br>\nsum2([1, 1, 1, 1]) → 2</br>\nSource: <a href=\"https://codingbat.com/prob/p190968\">https://codingbat.com/prob/p190968</a>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}
